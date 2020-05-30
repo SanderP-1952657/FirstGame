@@ -73,8 +73,7 @@ class player(object):
                 else:
                     win.blit(walkLeft[0], (self.x, self.y))
             pygame.draw.rect(win, (128, 0, 0), (self.hitbox[0], self.hitbox[1] - 20, 50, 10))
-            pygame.draw.rect(win, (0, 128, 0),
-                             (self.hitbox[0], self.hitbox[1] - 20, 50 - (5 * (10 - self.health / 2)), 10))
+            pygame.draw.rect(win, (0, 128, 0),(self.hitbox[0], self.hitbox[1] - 20, 50 - (5 * (10 - self.health / 2)), 10))
             self.hitbox = (self.x + 17, self.y + 11, 29, 52)
             # pygame.draw.rect(win, (255,0,0), self.hitbox,2)
 
